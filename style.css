@@ -18,7 +18,7 @@ body {
 
 /* cabeçalho */
 .site-header {
-    background-color: linear-gradient(90deg, #1e40af, #2563eb);
+    background: linear-gradient(90deg, #1e40af, #2563eb);
     color: white;
     padding: 24px 16px;
     text-align: center;
