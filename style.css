@@ -23,3 +23,94 @@ body {
     padding: 24px 16px;
     text-align: center;
 }
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+/* Layout principal */
+main {
+    max-width: 720px;
+    /* largura máxima do conteúdo */
+    margin: 24px auto;
+    /* centraliza na página */
+    padding: 0 16px;
+    /* respiro lateral em telas pequenas */
+}
+
+/* Cartão de conteúdo */
+.card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+    border: 1px solid #e5e7eb;
+}
+
+/* Tipografia e elementos do formulário */
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 8px 0 16px;
+    color: var(--muted);
+}
+
+label {
+    display: block;
+    /* quebra linha */
+    margin-top: 12px;
+    font-weight: 600;
+    color: #111827;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 6px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: var(--brand);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .15);
+}
+
+button {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: var(--brand);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+button:hover {
+    filter: brightness(1.05);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Resultado dinâmico (JS altera o texto) */
+#resultado {
+    margin-top: 14px;
+    font-size: 1.05rem;
+    color: #111827;
+}
+
+/* Rodapé */
+.site-footer {
+    padding: 24px 16px;
+    text-align: center;
+    color: var(--muted);
+}
