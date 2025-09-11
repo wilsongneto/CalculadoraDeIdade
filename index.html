@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header class="site-header">
+        <h1>Idade Calculator - Sua calculadora de idade</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="card" aria-labelledby="sec-titulo"> <!-- 'aria-labelledby' ajuda leitores de tela -->
+            <h2 id="sec-titulo">Calculadora de Idade</h2>
+            <p>Digite seu <strong>nome</strong> e seu <strong>ano de nascimento</strong> e clique no botão.</p>
+
+            <!-- Campo de nome -->
+            <label for="nome">Nome:</label> <!-- 'for' conecta o rótulo ao input -->
+            <input id="nome" type="text" placeholder="Digite seu nome aqui..." />
+
+            <!-- Campo de ano -->
+            <label for="ano">Ano de nascimento:</label>
+            <input id="ano" type="number" min="1900" max="2100" placeholder="Ex.: 1990" />
+
+            <!-- Botão que dispara o cálculo no JS -->
+            <button id="btn-calcular" type="button">Calcular idade</button>
+
+            <!-- Onde o JS vai escrever a resposta -->
+            <p id="resultado" aria-live="polite"></p>
+            <!-- 'aria-live' avisa tecnologia assistiva quando o texto muda -->
+        </section>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer class="site-footer">
+        <small>&copy; 2025 — Exemplo de HTML, CSS e JS.</small>
+    </footer>
+
+</body>
+
+</html>
